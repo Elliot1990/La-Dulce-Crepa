@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Disfruta de las mejores crepas dulces y saladas artesanales en La Dulce Crepa. Preparadas al momento con ingredientes frescos en la colonia. ¡Visítanos!">
+    <meta name="keywords" content="crepas, crepas dulces, crepas saladas, comida artesanal, colonia, fresas, nutella, queso crema, extras, menú">
+    <meta name="author" content="La Dulce Crepa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ladulcecrepa.com/"> <!-- Cambia esto por tu URL real si tienes dominio -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="Shortcut icon" href="../Img/Logo crepa Nosa.png">
+    <link rel="stylesheet" href="../lib/fontawesome-free-5.15.4-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <title>La Dulce Crepa - Crepas Dulces y Saladas Artesanales</title>
+    
+    <!-- Open Graph para Facebook -->
+    <meta property="og:title" content="La Dulce Crepa - Crepas Artesanales">
+    <meta property="og:description" content="Las mejores crepas dulces y saladas preparadas al momento con ingredientes frescos. ¡Visítanos en la colonia!">
+    <meta property="og:image" content="../Img/Crepas_main.png"> <!-- Cambia a URL absoluta si subes a web -->
+    <meta property="og:url" content="https://ladulcecrepa.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La Dulce Crepa - Crepas Artesanales">
+    <meta name="twitter:description" content="Disfruta de crepas dulces y saladas hechas con amor. Ingredientes frescos y deliciosos.">
+    <meta name="twitter:image" content="../Img/Crepas_main.png">
+    
+    <!-- Schema Markup para Restaurante -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "La Dulce Crepa",
+      "description": "Crepas dulces y saladas artesanales preparadas al momento con ingredientes frescos.",
+      "url": "https://ladulcecrepa.com/",
+      "telephone": "+52-XXX-XXX-XXXX",  <!-- Reemplaza con tu número real -->
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dirección de tu negocio",  <!-- Reemplaza -->
+        "addressLocality": "Tu Ciudad",
+        "addressRegion": "Tu Estado",
+        "postalCode": "Código Postal",
+        "addressCountry": "MX"
+      },
+      "servesCuisine": ["Mexicana", "Postres"],
+      "priceRange": "$$",
+      "image": "../Img/Crepas_main.png",
+      "menu": "#menu"
+    }
+    </script>
+
+</head>
+<body>
+     <!--Menu-->
+      <header class="header-principal"> 
+        <nav>
+          <div class="nav-container">
+            <div class="logo-parent">
+              
+              <img class="logoNosa" src="../Img/Logo crepa Nosa chico.PNG" alt="La Dulce Crepa" loading="lazy">
+              <a href="#" class="logo">La Dulce Crepa</a>
+
+            </div>
+            
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#menu">Menu</a></li>
+              
+            </ul>
+          </div>
+
+
+        </nav>
+
+      </header>
+
+        <!--Hero Section-->
+
+        <section id="inicio"  class="hero">
+          <div class="container">
+            <div class="hero-grid">
+              <div class="hero-content">
+                <div class="hero-badge">
+                  <p>Las mejores crepas de la colonia</p>
+                </div>
+                <h1 class="hero-title">
+                  Crepas a mano hechas con amor
+                </h1>
+                <p class="hero-description">
+                  Disfruta de nuestras deliciosas crepas dulces y saladas, preparadas al momento con las ingredientes frescos y de la mas alta calidad
+                </p>
+                <div class="hero-buttons">
+                  <a href="#menu" class="btn btn-primary">Ver Menú</a>
+                </div>
+              </div>
+              <div class="hero-image">
+                <img src="../Img/Crepas_main.png" alt="Crepas deliciosas" loading="lazy">
+
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+        <!--Menú Section-->
+
+        <section id="menu" class="menu-section">
+           <div class="container menu-container">
+
+            
+            <div class="menu-header">
+              <h2 class="menu-title">Nuestro Menú</h2>
+              <p class="menu-subtitle">Explora nuestra seleccion de crepas artesanales y extras. Todos nuestros platillos son preparados al momento.</p>
+            </div>
+
+            <!--tabs-->
+            <div class="tabs">
+              <div class="tab-list">
+                <button class="tab-trigger active" id="btn-active-dulces"><span>Crepas Dulces</span></button>
+                <button class="tab-trigger" id="btn-active-saladas"><span>Crepas Saladas</span></button>
+                <button class="tab-trigger" id="btn-active-extras"><span>Extras</span></button>
+              </div>
+
+              <!--tab content dulces-->
+              <div class="tab-content active" id="tabDulces">
+                <div class="menu-card" id="dulces-list">
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Nutella Mix</h3>
+                          <span class="popular-badge">Popular</span>
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de queso crema nutella & fresas</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$60</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Morita</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de zarmamora & queso crema</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$40</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Nube</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de lechera & queso crema</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$40</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Arcoiris</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de platano, chocolate & chispas</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$50</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Julieta</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de lechera, queso crema & fresas</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$50</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Delicius</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de nuetela, fresas & platano</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$45</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Amore</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de cajeta, queso crema & platano</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$60</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Original</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena queso crema, zarzamora & fresas</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$70</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!--tab content- saladas-->
+
+                  
+                  
+
+                </div>
+              </div>
+
+              <!--tab content saladas-->
+
+              <div class="tab-content " id="tabSaladas">
+
+                    <div class="menu-card" id="saladas-list">
+                       <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Tradicional</h3>
+                          <span class="popular-badge">Popular</span>
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de jamon & queso manchego</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$60</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Hawallana</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de jamón, piña & queso manchego</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$70</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Buenísima</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de salchicha, queso manchego & queso amarillo</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$80</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Quesísimo</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Crepa rellena de queso manchego, queso crema & queso amarillo</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$45</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  
+
+
+
+
+
+
+                    </div>
+                  </div>
+              
+               <!--Extras-->
+
+                  <div class="tab-content" id="tabExtras">
+                    <div class="menu-card" id="tab-extras">
+                       <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Plátanos fritos</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Orden de plátanos fritos preparados con lechera, chocolate & y chispas</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$35</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Café</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Delicioso café americano calientito con ducel algusto.</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$20</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    
+                    <div class="menu-item-content">
+
+                      <div class="menu-item-info">
+                        <div class="menu-item-header">
+                          <h3 class="menu-item-name">Té</h3>
+                          
+                        </div>
+                        <p class="menu-item-description">Disfruta tu crepa acompañado de un té caliente de diferentes sabores.</p>
+
+                      </div>
+
+                      <div class="menu-item-action">
+                        <span class="menu-item-price">$20</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                    </div>
+                  </div>   
+
+            </div>
+
+
+
+           </div>
+
+
+
+
+
+        </section>
+
+        <!--Footer-->
+
+        <footer class="footer" id="footer">
+          <div class="container">
+
+            <div class="footer-grid" >
+
+
+             <div class="sociales" >
+             <h4> La Dulce Crepa</h4>
+             <p class="footer-text">Las mejores crepas artesanales de la ciudad, hechas con amor y dedicación desde 2015.</p>
+             
+
+             </div>
+             <div class="contacto">
+             <h4>Contacto</h4>
+             <p class="footer-text"><i class="fas fa-phone"></i> Teléfono: +52 123 456 7890</p>
+             <p class="footer-text"><i class="fas fa-envelope"></i> Email: contacto@ladulcecrepa.com</p>
+             
+            
+             </div>
+             <div class="horarios">
+             <h4>Horarios</h4>
+             <p class="footer-text">Lunes a Viernes: 8:00 AM - 10:00 PM</p>
+             <p class="footer-text">Sábado y Domingo: 9:00 AM - 11:00 PM</p>
+             </div>
+
+
+
+            </div>
+            <div class="footer-bottom">
+              <p>@2026 Crepería La Dulce Crepa. Todos los derechos reservados.</p>
+            </div>
+
+
+           
+
+
+
+
+          </div>
+
+       
+
+        </footer>
+          
+           
+            
+          
+              
+              
+            
+
+           
+
+           
+         
+      
+
+
+
+
+
+           
+
+
+
+        
+        
+          
+      
+       
+
+      
+
+    
+</body>
+<script src="../js/app.js"></script>
+</html>
