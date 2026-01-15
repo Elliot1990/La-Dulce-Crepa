@@ -404,7 +404,7 @@ nav{
 .menu-item-price{
   font-size: 1.25rem;
   color: var(--color-primary);
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 /*Footter*/
@@ -428,7 +428,8 @@ nav{
 
 .footer-text{
   color: rgba(45, 24, 16, 0.7);
-  line-height: 1.5;
+  line-height: 1.8;
+  
 }
 
 .footer-bottom{
