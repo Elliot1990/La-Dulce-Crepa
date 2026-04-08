@@ -7,7 +7,7 @@ Sitio web para un negocio de crepas, diseñado para mostrar un menú atractivo, 
 <p align="center">
   <img src="./Img/Preview1.PNG" width="600"/>
   <img src="./Img/Preview2.PNG" width="600"/>
-  <img src="./Img/PreviewMobile.PNG" width="600"/>
+  <img src="./Img/PreviewMobile.PNG" width="400"/>
 </p>
 
 ---
